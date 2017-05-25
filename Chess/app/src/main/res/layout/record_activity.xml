@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:id="@+id/listview" />
+
+    <Switch
+        android:text="Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/sort"
+        tools:text="Sort by Name"
+        android:checked="false"
+        android:onClick="switchSort" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Playback"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/playback"
+            android:onClick="playback"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Remove"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/remove"
+            android:onClick="remove"
+            android:layout_alignBaseline="@+id/playback"
+            android:layout_alignBottom="@+id/playback"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

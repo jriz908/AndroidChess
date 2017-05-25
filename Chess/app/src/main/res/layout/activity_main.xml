@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jar424.chess.MainActivity">
+
+    <Button
+        android:text="Play Chess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="119dp"
+        android:id="@+id/play"
+        android:onClick="play"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Recorded Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:id="@+id/recorded"
+        android:onClick="recorded"
+        android:layout_below="@+id/play"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/whiteking"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/recorded"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="63dp"
+        android:id="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/blackking"
+        android:id="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/blackqueen"
+        android:layout_below="@+id/recorded"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/whitequeen"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView4"
+        android:id="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/whiteknight"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/imageView3"
+        android:id="@+id/imageView7" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/blackknight"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginStart="10dp"
+        android:id="@+id/imageView8" />
+    <![CDATA[
+
+
+
+    android:layout_below="@+id/play"
+        android:layout_alignStart="@+id/play" />
+
+
+]]>
+</RelativeLayout>
