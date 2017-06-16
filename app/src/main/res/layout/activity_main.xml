@@ -9,27 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
     tools:context="com.example.jar424.chess.MainActivity">
-
-    <Button
-        android:text="Play Chess"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="119dp"
-        android:id="@+id/play"
-        android:onClick="play"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Recorded Games"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="105dp"
-        android:id="@+id/recorded"
-        android:onClick="recorded"
-        android:layout_below="@+id/play"
-        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -53,24 +34,6 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/blackqueen"
-        android:layout_below="@+id/recorded"
-        android:layout_alignStart="@+id/imageView3"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="60dp"
-        android:id="@+id/imageView5" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/whitequeen"
-        android:layout_alignTop="@+id/imageView5"
-        android:layout_alignStart="@+id/imageView4"
-        android:id="@+id/imageView6" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:srcCompat="@drawable/whiteknight"
         android:layout_centerVertical="true"
         android:layout_alignEnd="@+id/imageView3"
@@ -80,10 +43,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/blackknight"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/imageView4"
-        android:layout_marginStart="10dp"
-        android:id="@+id/imageView8" />
+        android:id="@+id/imageView8"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <Button
+        android:text="Play Chess"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:id="@+id/play"
+        android:onClick="play"
+        android:background="@drawable/buttonshape"
+        android:layout_above="@+id/imageView8"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Recorded Games"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:id="@+id/recorded"
+        android:onClick="recorded"
+        android:background="@drawable/buttonshape"
+        android:layout_below="@+id/imageView8"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/whitequeen"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/recorded"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_marginTop="49dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/blackqueen"
+        android:id="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView8" />
     <![CDATA[
 
 
